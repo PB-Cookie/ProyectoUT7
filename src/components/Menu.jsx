@@ -17,13 +17,16 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import HomeIcon from '@mui/icons-material/Home';
-
+import EngineeringIcon from '@mui/icons-material/Engineering';
 import { Link, useNavigate } from 'react-router-dom';
 import { Tooltip } from '@mui/material';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+
 
 export default function Menu() {
   const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
+
 
 
 
@@ -41,6 +44,31 @@ export default function Menu() {
               <ListItemButton>
                 <ListItemIcon><HomeIcon /></ListItemIcon>
                 <ListItemText primary={"Inicio"} />
+              </ListItemButton>
+            </Tooltip>
+          </ListItem>
+        </Link>
+
+
+        {/* Builds */}
+        <Link to='/builds' style={{ textDecoration: 'none', color: 'white' }}>
+          <ListItem key={"Builds"} disablePadding>
+            <Tooltip title='Ir a builds'>
+              <ListItemButton>
+                <ListItemIcon><EngineeringIcon /></ListItemIcon>
+                <ListItemText primary={"Builds"} />
+              </ListItemButton>
+            </Tooltip>
+          </ListItem>
+        </Link>
+
+        {/* DONAR */}
+        <Link to='/donate' style={{ textDecoration: 'none', color: 'white' }}>
+          <ListItem key={"Donar"} disablePadding>
+            <Tooltip title='Donar'>
+              <ListItemButton>
+                <ListItemIcon><VolunteerActivismIcon /></ListItemIcon>
+                <ListItemText primary={"Donar"} />
               </ListItemButton>
             </Tooltip>
           </ListItem>

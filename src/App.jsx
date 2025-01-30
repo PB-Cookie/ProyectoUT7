@@ -1,6 +1,9 @@
 
 import './App.css'
 import Home from './pages/Home'
+import Builds from './pages/Builds'
+import Donar from './pages/Donar'
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage'
 
@@ -19,8 +22,12 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'reports',
-        element: <Home />
+        path: 'builds',
+        element: <Builds />
+      },
+      {
+        path: 'donate',
+        element: <Donar />
       }
     ]
   },
