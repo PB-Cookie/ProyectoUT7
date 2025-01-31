@@ -61,7 +61,17 @@ export default function Menu() {
             </Tooltip>
           </ListItem>
         </Link>
-
+        {/* BUILDS */}
+        <Link to='/tools' style={{ textDecoration: 'none', color: 'white' }}>
+          <ListItem key={"Tools"} disablePadding>
+            <Tooltip title='Tools'>
+              <ListItemButton>
+                <ListItemIcon><VolunteerActivismIcon /></ListItemIcon>
+                <ListItemText primary={"Tools"} />
+              </ListItemButton>
+            </Tooltip>
+          </ListItem>
+        </Link>
         {/* DONAR */}
         <Link to='/donate' style={{ textDecoration: 'none', color: 'white' }}>
           <ListItem key={"Donar"} disablePadding>

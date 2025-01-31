@@ -14,9 +14,6 @@ import FormLabel from "@mui/material/FormLabel";
 import Checkbox from "@mui/material/Checkbox";
 import { useState } from "react";
 import { DialogContent, Divider } from "@mui/material";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import InputLabel from "@mui/material/InputLabel";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContentText from "@mui/material/DialogContentText";
@@ -127,8 +124,8 @@ function Donar() {
                     square={false}
                     sx={{
                         textAlign: "center",
-                        minHeight: "400px",
-                        padding: "20px",
+                        padding: {xl:"40px", xs:"10px"},
+                        minHeight:"400px"
                     }}
                 >
                     <Box component="form" onSubmit={handleSubmit}>
@@ -178,11 +175,11 @@ function Donar() {
                                         <FormControlLabel
                                             value="femenino"
                                             control={<Radio required />}
-                                            label="FEM" />
+                                            label="F" />
                                         <FormControlLabel
                                             value="masculino"
                                             control={<Radio required />}
-                                            label="MASC" />
+                                            label="M" />
                                         <FormControlLabel
                                             value="otro"
                                             control={<Radio required />}

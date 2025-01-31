@@ -6,6 +6,7 @@ import Donar from './pages/Donar'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ErrorPage from './pages/ErrorPage'
+import Tools from './pages/Tools'
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: 'builds',
         element: <Builds />
+      },
+      {
+        path: 'tools',
+        element: <Tools />
       },
       {
         path: 'donate',
