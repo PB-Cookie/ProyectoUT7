@@ -21,7 +21,7 @@ import EngineeringIcon from '@mui/icons-material/Engineering';
 import { Link, useNavigate } from 'react-router-dom';
 import { Tooltip } from '@mui/material';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-
+import HardwareIcon from '@mui/icons-material/Hardware';
 
 export default function Menu() {
   const navigate = useNavigate();
@@ -66,7 +66,7 @@ export default function Menu() {
           <ListItem key={"Tools"} disablePadding>
             <Tooltip title='Tools'>
               <ListItemButton>
-                <ListItemIcon><VolunteerActivismIcon /></ListItemIcon>
+                <ListItemIcon><HardwareIcon /></ListItemIcon>
                 <ListItemText primary={"Tools"} />
               </ListItemButton>
             </Tooltip>
@@ -104,7 +104,7 @@ export default function Menu() {
   );
 
   return (
-    <Box sx={{ width: 1 }}>
+    <Box sx={{ width: 0 }}>
       <AppBar position="static">
         <Toolbar>
           <IconButton

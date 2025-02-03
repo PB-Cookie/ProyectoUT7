@@ -11,53 +11,65 @@ import Link from '@mui/material/Link';
 import '../App.css';
 import { Typography } from '@mui/material';
 
+
 function Tools() {
 
     const DemoPaper = styled(Paper)(({ theme }) => ({
-        width: '70vw',
+        width: '100%',
         height: 250,
-        backgroundRepeat: 'no-repeat', // Evita la repetición
-        backgroundSize: 'cover', // Asegura que cubra todo el espacio
-        backgroundPosition: 'center', // Centra la imagen
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
         padding: theme.spacing(2),
         ...theme.typography.body2,
+        alignContent:'center',
         textAlign: 'center',
-        borderRadius:20,
+        borderRadius: 20,
 
     }));
 
 
 
     return (
-        <>
+        <div className='img-tools'  style={{ height: '100vh'}}>
             <Menu></Menu>
-            <Stack direction="column" spacing={4} sx={{ ml: "15vw", mr:"15vw" }}>
-
-                <Link href='google.com'><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-filter2.webp)' }} className='paperTool' >
-                    <Typography variant='h1' color='white' className='text'>FILTER</Typography>
-                </DemoPaper></Link>
-
-
-                <Link href='google.com'><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-pob.webp)' }} className='paperTool' >
-                    <Typography variant='h1' color='white'>Path of Building</Typography>
-                </DemoPaper></Link>
-
-                <Link href='google.com'><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-instill.webp)' }} className='paperTool' >
-                    <Typography variant='h1' color='white'>Instill</Typography>
-                </DemoPaper></Link>
-
-                <Link href='google.com'><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-atlas.avif)' }} className='paperTool' >
-                    <Typography variant='h1' color='white'>ATLAS</Typography>
-                </DemoPaper></Link>
-
-                <Link href='google.com'><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-passive.png)' }} className='paperTool' >
-                    <Typography variant='h1' color='white'>FILTER</Typography>
-                </DemoPaper></Link>
-
-            </Stack>
+            <Grid container spacing={4} sx={{ ml: "10vw", mr: "15vw" }} width={0.8}>
+                <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
+                    <Link href='https://github.com/NeverSinkDev/NeverSink-Filter-for-PoE2/releases/tag/0.52.0a' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-filter.png)' }} className='paperTool' >
+                    </DemoPaper></Link>
+                </Grid>
 
 
-        </>
+                <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
+
+                    <Link href='https://pathofbuilding.community/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-pob.png)' }} className='paperTool' >
+                    </DemoPaper></Link>
+                </Grid>
+                <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
+
+                    <Link href='https://maxroll.gg/poe2/instilling-calculator' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-instill.png)' }} className='paperTool' >
+                    </DemoPaper></Link>
+                </Grid>
+                <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
+
+                    <Link href='https://maxroll.gg/poe2/atlas-tree/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-atlas2.webp)' }} className='paperTool' >
+                    </DemoPaper></Link>
+                </Grid>
+
+                <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
+
+                    <Link href='https://maxroll.gg/poe2/passive-tree/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-passive.png)' }} className='paperTool' >
+                    </DemoPaper></Link>
+                </Grid>
+                <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
+
+                    <Link href='https://sidekick-poe.github.io/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-sidekick2.png)' }} className='paperTool' >
+                    </DemoPaper></Link>
+                </Grid>
+            </Grid>
+
+
+        </div>
     )
 }
 

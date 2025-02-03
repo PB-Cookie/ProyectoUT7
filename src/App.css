@@ -1,4 +1,4 @@
-#root{
+#root {
   width: 100%;
   height: 100%;
 }
@@ -6,18 +6,22 @@
   overflow: hidden;
 }
 
-.paperTool:hover{
+.paperTool:hover {
   transition: all 0.3s ease 0s;
 
-  transform: scale(1.25);
-  opacity: 0.5;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
-.paperTool{
+.paperTool {
   transition: all 0.3s ease;
   width: 100%;
   border: solid white 1px;
 }
-.text{
+.text {
   opacity: 1;
   color: white;
+}
+
+.colorTexto {
+  color: #a38d6d;
 }

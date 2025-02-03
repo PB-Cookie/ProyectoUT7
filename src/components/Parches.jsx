@@ -4,6 +4,8 @@ import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid2';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import '../home.css'
+
 
 const Parches = () => {
   const [patchNotes, setPatchNotes] = useState([]);
@@ -31,21 +33,19 @@ const Parches = () => {
 
   return (
     <Grid  alignItems="center">
-      <Typography variant="h4" component="h1" textAlign="center" mt={3}>
+      <Typography variant="h4" component="h1" textAlign="center" mt={3} color='#f5ecae'>
         Path of Exile Patch Notes
       </Typography>
       {patchNotes.map((patch) => (
-        <Card key={patch.version} sx={{ maxWidth: 1200, mt: 3 }}>
-          <CardContent>
-            <Link href={patch.source} target="_blank">
-              <Typography variant="h6" component="h2">{patch.date}</Typography>
+        <Card key={patch.version} sx={{ maxWidth: 1200, mt: 3, padding:1, paddingRight:4} } >
+          <CardContent sx={{ paddingBottom: '10px !important' }}> {/*el !important fuerza la anulación de estilos predeterminados */}
+            <Link href={patch.source} target="_blank" color='#b5af82'>
+              <Typography variant="h6" component="h2" marginLeft={3} marginTop={1} fontWeight={700}>{"Versión "+patch.version +" | "+ patch.date}</Typography>
             </Link>
-            <Typography gutterBottom variant="h6" fontWeight={700}>
-              Versión: {patch.version}
-            </Typography>
+ 
             <ul>
               {patch.notes.map((note, index) => (
-                <li key={index}>{note}</li>
+                <li key={index} className='colorTexto'>{note}</li>
               ))}
             </ul>
           </CardContent>
