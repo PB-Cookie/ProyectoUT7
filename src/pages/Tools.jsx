@@ -33,37 +33,37 @@ function Tools() {
     return (
         <div className='img-tools'  style={{ height: '100vh'}}>
             <Menu></Menu>
-            <Grid container spacing={4} sx={{ ml: "10vw", mr: "15vw" }} width={0.8}>
+            <Grid container spacing={4} sx={{ ml: "10vw", mr: "15vw", mt:"3vw"}} width={0.8} height={'80vh'}>
                 <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
-                    <Link href='https://github.com/NeverSinkDev/NeverSink-Filter-for-PoE2/releases/tag/0.52.0a' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-filter.png)' }} className='paperTool' >
+                    <Link href='https://github.com/NeverSinkDev/NeverSink-Filter-for-PoE2/releases/tag/0.52.0a' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tools/tool-filter.png)' }} className='paperTool' >
                     </DemoPaper></Link>
                 </Grid>
 
 
                 <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
 
-                    <Link href='https://pathofbuilding.community/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-pob.png)' }} className='paperTool' >
+                    <Link href='https://pathofbuilding.community/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tools/tool-pob.png)' }} className='paperTool' >
                     </DemoPaper></Link>
                 </Grid>
                 <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
 
-                    <Link href='https://maxroll.gg/poe2/instilling-calculator' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-instill.png)' }} className='paperTool' >
+                    <Link href='https://maxroll.gg/poe2/instilling-calculator' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tools/tool-instill.png)' }} className='paperTool' >
                     </DemoPaper></Link>
                 </Grid>
                 <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
 
-                    <Link href='https://maxroll.gg/poe2/atlas-tree/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-atlas2.webp)' }} className='paperTool' >
+                    <Link href='https://maxroll.gg/poe2/atlas-tree/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tools/tool-atlas2.png)' }} className='paperTool' >
                     </DemoPaper></Link>
                 </Grid>
 
                 <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
 
-                    <Link href='https://maxroll.gg/poe2/passive-tree/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-passive.png)' }} className='paperTool' >
+                    <Link href='https://maxroll.gg/poe2/passive-tree/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tools/tool-passive.png)' }} className='paperTool' >
                     </DemoPaper></Link>
                 </Grid>
                 <Grid size={{ xs: 12,s:12, md: 6, xl: 6 }}>
 
-                    <Link href='https://sidekick-poe.github.io/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tool-sidekick2.png)' }} className='paperTool' >
+                    <Link href='https://sidekick-poe.github.io/' target='_blank' sx={{ textDecoration: 'none' }}><DemoPaper square={false} sx={{ backgroundImage: 'url(/imgs/tools/tool-sidekick2.png)' }} className='paperTool' >
                     </DemoPaper></Link>
                 </Grid>
             </Grid>

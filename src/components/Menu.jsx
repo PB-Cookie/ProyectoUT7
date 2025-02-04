@@ -22,6 +22,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Tooltip } from '@mui/material';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import HardwareIcon from '@mui/icons-material/Hardware';
+import VozMenu from './VozMenu';
 
 export default function Menu() {
   const navigate = useNavigate();
@@ -73,7 +74,7 @@ export default function Menu() {
           </ListItem>
         </Link>
         {/* DONAR */}
-        <Link to='/donate' style={{ textDecoration: 'none', color: 'white' }}>
+        <Link to='/donar' style={{ textDecoration: 'none', color: 'white' }}>
           <ListItem key={"Donar"} disablePadding>
             <Tooltip title='Donar'>
               <ListItemButton>
@@ -85,13 +86,13 @@ export default function Menu() {
         </Link>
 
 
-        {/* AYUDA */}
-        <Link to='/manual.pdf' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>
+        {/* Guía Campaña */}
+        <Link to='/PoeCampaignCompleta.pdf' target='_blank' style={{ textDecoration: 'none', color: 'white' }}>
           <ListItem key={"Ayuda"} disablePadding>
-            <Tooltip title='Ir a Ayuda'>
+            <Tooltip title='Guía de la campaña'>
               <ListItemButton>
                 <ListItemIcon><HelpIcon /></ListItemIcon>
-                <ListItemText primary={"Ayuda"} />
+                <ListItemText primary={"Guía"} />
               </ListItemButton>
             </Tooltip>
           </ListItem>
@@ -104,7 +105,7 @@ export default function Menu() {
   );
 
   return (
-    <Box sx={{ width: 0 }}>
+    <Box sx={{ width: 0 }} >
       <AppBar position="static">
         <Toolbar>
           <IconButton
@@ -119,6 +120,8 @@ export default function Menu() {
               <MenuIcon />
             </Tooltip>
           </IconButton>
+      <VozMenu/>
+
         </Toolbar>
       </AppBar>
       <Drawer open={open} onClose={toggleDrawer(false)}>

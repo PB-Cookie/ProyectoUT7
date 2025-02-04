@@ -1,4 +1,4 @@
-
+import 'regenerator-runtime/runtime'; //SI NO NO FURULA
 import './App.css'
 import Home from './pages/Home'
 import Builds from './pages/Builds'
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
         element: <Tools />
       },
       {
-        path: 'donate',
+        path: 'donar',
         element: <Donar />
       }
     ]
