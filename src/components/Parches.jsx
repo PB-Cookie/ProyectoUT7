@@ -37,7 +37,7 @@ const Parches = () => {
         Path of Exile Patch Notes
       </Typography>
       {patchNotes.map((patch) => (
-        <Card key={patch.version} sx={{ maxWidth: 1200, mt: 3, padding:1, paddingRight:4} } >
+        <Card key={patch.version+"|"+patch.date} sx={{ maxWidth: 1200, mt: 3, padding:1, paddingRight:4} } >
           <CardContent sx={{ paddingBottom: '10px !important' }}> {/*el !important fuerza la anulación de estilos predeterminados */}
             <Link href={patch.source} target="_blank" color='#b5af82'>
               <Typography variant="h6" component="h2" marginLeft={3} marginTop={1} fontWeight={700}>{"Versión "+patch.version +" | "+ patch.date}</Typography>

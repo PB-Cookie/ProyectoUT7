@@ -16,43 +16,24 @@ const VozMenu = () => {
       callback: () => navigate("/home"),
       isFuzzyMatch: true,
       fuzzyMatchingThreshold: 0.2,
-      matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
     },
     {
         command:  ['build', 'builds'],
         callback: () => navigate("/builds"),
         isFuzzyMatch: true,
         fuzzyMatchingThreshold: 0.2,
-        matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
       },
       {
         command: ['herramientas', 'tools'],
         callback: () => navigate("/tools"),
-        isFuzzyMatch: true,
-        fuzzyMatchingThreshold: 0.2,
-        matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
+
       },
       {
-        command: ['donar', 'donate'],
-        callback: () => ("/donar"),
-        isFuzzyMatch: true,
-        fuzzyMatchingThreshold: 0.2,
-        matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
+        command: ['donar', 'donación'],
+        callback: () => navigate("/donar"),
+
       },
-      {
-        command: 'pausar',
-        callback: () => pararVideo(),
-        isFuzzyMatch: true,
-        fuzzyMatchingThreshold: 0.2,
-        matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
-      },
-      {
-        command: ['reanudar', 'continuar'],
-        callback: () => reanudarVideo(),
-        isFuzzyMatch: true,
-        fuzzyMatchingThreshold: 0.2,
-        matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
-      },
+
 
 
   ]

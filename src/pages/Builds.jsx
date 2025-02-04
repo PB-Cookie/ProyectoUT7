@@ -14,13 +14,15 @@ function Builds() {
 
       {
         command: 'pausar',
-        callback: () => pararVideo(),
+        callback: () => {
+          pausarVideo();
+        },
         isFuzzyMatch: true,
         fuzzyMatchingThreshold: 0.2,
         matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
       },
       {
-        command: ['reanudar', 'continuar'],
+        command: ['reanudar', 'continuar', 'empezar', 'play'],
         callback: () => reanudarVideo(),
         isFuzzyMatch: true,
         fuzzyMatchingThreshold: 0.2,
@@ -43,8 +45,7 @@ function Builds() {
       {
         command: 'guerrero',
         callback: () => setClase("https://www.youtube.com/embed/8M8DIM5KHek?enablejsapi=1"),
-        isFuzzyMatch: true,
-        fuzzyMatchingThreshold: 0.2,
+
         matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
       },
       {

@@ -18,7 +18,7 @@ function Home() {
         justifyContent="center"
         sx={{ minHeight: '100vh' }}
       >
-        <Grid item>
+        <Grid>
           <Parches />
         </Grid>
       </Grid>
