@@ -1,4 +1,5 @@
 import 'regenerator-runtime/runtime'; //SI NO NO FURULA
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import Home from './pages/Home'
 import Builds from './pages/Builds'

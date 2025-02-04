@@ -34,11 +34,26 @@ const VozMenu = () => {
       },
       {
         command: ['donar', 'donate'],
-        callback: () => navigate("/donar"),
+        callback: () => ("/donar"),
         isFuzzyMatch: true,
         fuzzyMatchingThreshold: 0.2,
         matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
       },
+      {
+        command: 'pausar',
+        callback: () => pararVideo(),
+        isFuzzyMatch: true,
+        fuzzyMatchingThreshold: 0.2,
+        matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
+      },
+      {
+        command: ['reanudar', 'continuar'],
+        callback: () => reanudarVideo(),
+        isFuzzyMatch: true,
+        fuzzyMatchingThreshold: 0.2,
+        matchInterim: true //estas 3 opciones son para que no tenga que ser exacto
+      },
+
 
   ]
 
