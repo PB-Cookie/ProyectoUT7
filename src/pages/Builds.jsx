@@ -123,10 +123,12 @@ function Builds() {
       </ul>
       </div>
 
-
-      <div className="ratio ratio-16x9" style={{width:'60%', marginLeft:'20%'}}>
+{clase!="" && //en verdad esto da igual, solo hace que los botones no aparezcan abajo
+        <div className="ratio ratio-16x9" style={{width:'60%', marginLeft:'20%'}}>
         <iframe className="embed-responsive-item" src={clase} ref={videoRef} allowFullScreen></iframe>
       </div>
+}
+
 {/* TODO: Solo falta uno ns por qué */}
 
 
